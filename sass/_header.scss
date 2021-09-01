@@ -1,0 +1,39 @@
+.headerContainer {
+  height: 100vh;
+  background-color: $color4;
+  .headerContent {
+    text-align: center;
+    padding: 20px 0px 0px 20px;
+    width: 95%;
+    height: 100%;
+    border-top-right-radius: 100px;
+    background-color: $color3;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: end;
+    .brandContent {
+      text-align: center;
+    }
+    .sloganContainer {
+      .slogan {
+        font: $headLine3;
+        color: $color1;
+        margin-bottom: 50px;
+      }
+    }
+    .btnContainer {
+      text-align: end;
+      .btnContact {
+        font: $button;
+        background-color: $color4;
+        color: $color1;
+        border: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        outline: none;
+        padding: 15px 20px;
+      }
+    }
+  }
+}

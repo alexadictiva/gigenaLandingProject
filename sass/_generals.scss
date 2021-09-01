@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font: $body1;
+  position: relative;
+  overflow-x: hidden;
+}
+.wrapperMain {
+  max-width: 1366px;
+  margin: auto;
+  padding-top: 60px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  min-width: 320px;
+  max-width: 1024px;
+}
