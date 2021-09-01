@@ -12,11 +12,6 @@ body {
   position: relative;
   overflow-x: hidden;
 }
-.wrapperMain {
-  max-width: 1366px;
-  margin: auto;
-  padding-top: 60px;
-}
 
 img {
   max-width: 100%;
@@ -30,4 +25,5 @@ a {
 .wrapper {
   min-width: 320px;
   max-width: 1024px;
+  margin: auto;
 }
