@@ -1,3 +1,4 @@
+/*$headLine3: normal 30px/38px $fontBase;*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -35,7 +36,7 @@ hr {
 
 .wrapper {
   min-width: 320px;
-  max-width: 1024px;
+  /*max-width: 1024px;*/
   margin: auto;
   position: relative;
 }
@@ -99,7 +100,7 @@ hr {
 }
 
 .aboutContainer h2 {
-  font: normal 30px/38px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: bold 30px/38px "AkzidenzGroteskBE-Regular", sans-serif;
   color: #272727;
   margin-bottom: 20px;
 }
@@ -117,7 +118,7 @@ hr {
 }
 
 .aboutContainer .aboutFlex .aboutFlexDescription h3 {
-  font: normal 22px/32px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: bold 22px/29px "AkzidenzGroteskBE-Regular", sans-serif;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -134,7 +135,7 @@ hr {
 }
 
 .about2Container h2 {
-  font: normal 18px/21px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: bold 18px/20px "AkzidenzGroteskBE-Regular", sans-serif;
   margin-bottom: 30px;
   color: #272727;
 }
@@ -302,6 +303,11 @@ hr {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #fd5b33;
 }
 
 @media screen and (min-width: 768px) {
