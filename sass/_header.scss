@@ -1,9 +1,9 @@
 .headerContainer {
-  /*height: 100vh;*/
+  height: 100vh;
   background-color: $color4;
   .headerContent {
     text-align: center;
-    padding: 100px 0px 0px 20px;
+    padding: 100px 20px 0px;
     width: 95%;
     height: 100%;
     border-top-right-radius: 100px;
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
-    justify-content: end;
+    justify-content: center;
     .brandContent {
       text-align: center;
     }
@@ -24,6 +24,10 @@
     }
     .btnContainer {
       text-align: end;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
       .btnContact {
         font: $button;
         background-color: $color4;

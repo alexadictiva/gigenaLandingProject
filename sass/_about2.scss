@@ -1,0 +1,18 @@
+/*about 2*/
+
+.about2Container {
+  padding: 40px 20px;
+  text-align: center;
+  h2 {
+    font: $headLine5;
+    margin-bottom: 30px;
+    span {
+      display: block;
+    }
+  }
+  picture {
+    img {
+      margin-top: 30px;
+    }
+  }
+}

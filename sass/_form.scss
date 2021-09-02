@@ -1,0 +1,41 @@
+/*form*/
+.formContainer {
+  padding: 40px 20px;
+  background-color: $color3;
+  form {
+    .input {
+      .formControl {
+        input {
+          @include input;
+          &::placeholder {
+            color: $color1;
+            font: $caption;
+          }
+        }
+      }
+    }
+    .textarea {
+      .formControl {
+        textarea {
+          @include input;
+          height: 120px;
+          &::placeholder {
+            color: $color1;
+            font: $caption;
+          }
+        }
+      }
+    }
+    .formBtn {
+      text-align: center;
+      button {
+        text-transform: uppercase;
+        color: $color1;
+        border: $color1 1px solid;
+        padding: 10px;
+        background-color: $color3;
+        outline: none;
+      }
+    }
+  }
+}

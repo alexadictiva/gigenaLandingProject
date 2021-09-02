@@ -6,12 +6,12 @@
 }
 
 :root {
-  font-size: 62.5%;
+  /*font-size: 62.5%;*/
   scroll-behavior: smooth;
 }
 
 body {
-  font: normal 1.7rem/2rem "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 14px/20px "AkzidenzGroteskBE-Regular", sans-serif;
   position: relative;
   overflow-x: hidden;
 }
@@ -25,20 +25,43 @@ a {
   text-decoration: none;
 }
 
+hr {
+  background-color: #fd5b33;
+  width: 90%;
+  margin: 30px auto;
+  border: 1px solid #fd5b33;
+}
+
 .wrapper {
   min-width: 320px;
   max-width: 1024px;
   margin: auto;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .aboutFlex div {
+    width: 50%;
+  }
 }
 
 .headerContainer {
-  /*height: 100vh;*/
+  height: 100vh;
   background-color: #fd5b33;
 }
 
 .headerContainer .headerContent {
   text-align: center;
-  padding: 100px 0px 0px 20px;
+  padding: 100px 20px 0px;
   width: 95%;
   height: 100%;
   border-top-right-radius: 100px;
@@ -51,9 +74,9 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 50px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .headerContainer .headerContent .brandContent {
@@ -61,17 +84,21 @@ a {
 }
 
 .headerContainer .headerContent .sloganContainer .slogan {
-  font: normal 2.5rem/3rem "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 25px/30px "AkzidenzGroteskBE-Regular", sans-serif;
   color: #ffffff;
   margin-bottom: 50px;
 }
 
 .headerContainer .headerContent .btnContainer {
   text-align: end;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
 }
 
 .headerContainer .headerContent .btnContainer .btnContact {
-  font: bold 1.5rem/2rem "AkzidenzGroteskBE-Regular", sans-serif;
+  font: bold 15px/20px "AkzidenzGroteskBE-Regular", sans-serif;
   background-color: #fd5b33;
   color: #ffffff;
   border: 0;
@@ -79,5 +106,212 @@ a {
   border-bottom-left-radius: 10px;
   outline: none;
   padding: 15px 20px;
+}
+
+.aboutContainer {
+  padding: 40px 20px;
+}
+
+.aboutContainer h2 {
+  font: normal 25px/30px "AkzidenzGroteskBE-Regular", sans-serif;
+  margin-bottom: 20px;
+}
+
+.aboutContainer p {
+  margin-bottom: 20px;
+}
+
+.aboutContainer .aboutFlex {
+  margin-top: 20px;
+}
+
+.aboutContainer .aboutFlex .aboutFlexDescription {
+  margin-top: 20px;
+}
+
+.aboutContainer .aboutFlex .aboutFlexDescription h3 {
+  font: bold 18px/21px "AkzidenzGroteskBE-Regular", sans-serif;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.aboutContainer .aboutFlex .aboutFlexDescription ul {
+  font: normal 12px/22px "AkzidenzGroteskBE-Regular", sans-serif;
+  padding-left: 20px;
+}
+
+/*about 2*/
+.about2Container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about2Container h2 {
+  font: bold 18px/21px "AkzidenzGroteskBE-Regular", sans-serif;
+  margin-bottom: 30px;
+}
+
+.about2Container h2 span {
+  display: block;
+}
+
+.about2Container picture img {
+  margin-top: 30px;
+}
+
+.footer {
+  padding: 40px 20px;
+  background-color: #1f1f1f;
+  text-align: center;
+}
+
+.footer .brandFooter {
+  margin-bottom: 30px;
+}
+
+.footer .brandFooter img {
+  width: 25%;
+}
+
+.footer .footerDescription p {
+  color: #ffffff;
+  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer .firmContainer {
+  margin-top: 20px;
+  text-align: end;
+}
+
+/*form*/
+.formContainer {
+  padding: 40px 20px;
+  background-color: #1f1f1f;
+}
+
+.formContainer form .input .formControl input {
+  border: 0;
+  border-bottom: solid 1px #fd5b33;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.formContainer form .input .formControl input::-webkit-input-placeholder {
+  color: #ffffff;
+  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+}
+
+.formContainer form .input .formControl input:-ms-input-placeholder {
+  color: #ffffff;
+  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+}
+
+.formContainer form .input .formControl input::-ms-input-placeholder {
+  color: #ffffff;
+  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+}
+
+.formContainer form .input .formControl input::placeholder {
+  color: #ffffff;
+  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+}
+
+.formContainer form .textarea .formControl textarea {
+  border: 0;
+  border-bottom: solid 1px #fd5b33;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  height: 120px;
+}
+
+.formContainer form .textarea .formControl textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+}
+
+.formContainer form .textarea .formControl textarea:-ms-input-placeholder {
+  color: #ffffff;
+  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+}
+
+.formContainer form .textarea .formControl textarea::-ms-input-placeholder {
+  color: #ffffff;
+  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+}
+
+.formContainer form .textarea .formControl textarea::placeholder {
+  color: #ffffff;
+  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+}
+
+.formContainer form .formBtn {
+  text-align: center;
+}
+
+.formContainer form .formBtn button {
+  text-transform: uppercase;
+  color: #ffffff;
+  border: #ffffff 1px solid;
+  padding: 10px;
+  background-color: #1f1f1f;
+  outline: none;
+}
+
+.providerContainer {
+  padding: 40px 20px;
+  background-color: #c2c2c2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.providerContainer .provider {
+  text-align: center;
+}
+
+.providerContainer .provider h3 {
+  text-transform: uppercase;
+  color: #1f1f1f;
+  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+  margin-bottom: 20px;
+}
+
+/*slider*/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=styles.css.map */

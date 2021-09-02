@@ -4,7 +4,7 @@
   padding: 0;
 }
 :root {
-  font-size: 62.5%;
+  /*font-size: 62.5%;*/
   scroll-behavior: smooth;
 }
 body {
@@ -21,9 +21,26 @@ img {
 a {
   text-decoration: none;
 }
-
+hr {
+  background-color: $color4;
+  width: 90%;
+  margin: 30px auto;
+  border: 1px solid $color4;
+}
 .wrapper {
   min-width: 320px;
   max-width: 1024px;
   margin: auto;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutFlex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    div {
+      width: 50%;
+    }
+  }
 }

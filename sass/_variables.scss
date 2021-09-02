@@ -3,13 +3,25 @@ $color1: #ffffff;
 $color2: #000000;
 $color3: #1f1f1f;
 $color4: #fd5b33;
+$color5: #c2c2c2;
 
 $headLine1: bold 8rem/9rem $fontBase;
 $headLine2: bold 5rem/6rem $fontBase;
-$headLine3: normal 2.5rem/3rem $fontBase;
-$headLine4: bold 2.2rem/2.9rem $fontBase;
-$headLine5: bold 1.9rem/3rem $fontBase;
-$body1: normal 1.7rem/2rem $fontBase;
+$headLine3: normal 25px/30px $fontBase;
+$headLine4: bold 22px/32px $fontBase;
+$headLine5: bold 18px/21px $fontBase;
+$headLine6: normal 12px/22px $fontBase;
+$body1: normal 14px/20px $fontBase;
 
-$button: bold 1.5rem/2rem $fontBase;
-$caption: normal 1.2rem/1.5rem $fontBase;
+$button: bold 15px/20px $fontBase;
+$caption: normal 12px/15px $fontBase;
+
+@mixin input() {
+  border: 0;
+  border-bottom: solid 1px $color4;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}

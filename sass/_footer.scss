@@ -1,0 +1,22 @@
+.footer {
+  padding: 40px 20px;
+  background-color: $color3;
+  text-align: center;
+  .brandFooter {
+    margin-bottom: 30px;
+    img {
+      width: 25%;
+    }
+  }
+  .footerDescription {
+    p {
+      color: $color1;
+      font: $caption;
+      margin-bottom: 20px;
+    }
+  }
+  .firmContainer {
+    margin-top: 20px;
+    text-align: end;
+  }
+}

@@ -1,0 +1,15 @@
+.providerContainer {
+  padding: 40px 20px;
+  background-color: $color5;
+  display: flex;
+  justify-content: space-evenly;
+  .provider {
+    text-align: center;
+    h3 {
+      text-transform: uppercase;
+      color: $color3;
+      font: $caption;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,1 +1,26 @@
+.aboutContainer {
+  padding: 40px 20px;
+  h2 {
+    font: $headLine3;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .aboutFlex {
+    margin-top: 20px;
 
+    .aboutFlexDescription {
+      margin-top: 20px;
+      h3 {
+        font: $headLine5;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+      ul {
+        font: $headLine6;
+        padding-left: 20px;
+      }
+    }
+  }
+}
