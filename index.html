@@ -27,14 +27,29 @@
     <div class="wrapper">
       <header class="headerContainer">
         <section class="headerContent">
-          <div class="brandContent">
-            <img src="./assets/imgs/mobile/logo.svg" alt="Logo" />
+          <div
+            class="
+              brandContent
+              animate__animated animate__fadeInDown animate__slower
+            "
+          >
+            <a href="#">
+              <img src="./assets/imgs/mobile/logo.svg" alt="Logo" />
+            </a>
           </div>
-          <div class="sloganContainer">
+          <div
+            class="
+              sloganContainer
+              animate__animated animate__fadeInDown animate__slower
+            "
+          >
             <p class="slogan">
               Un legado arquitectónico para la Cuidad de Buenos Aires
             </p>
-            <a href="#about">
+            <a
+              href="#about"
+              class="animate__animated animate__fadeInDown animate__slower"
+            >
               <img src="./assets/icons/arrowDown.svg" alt="Arrow Down" />
             </a>
           </div>
@@ -45,7 +60,11 @@
       </header>
       <main>
         <section
-          class="aboutContainer wow animate__animated animate__fadeInDown"
+          class="
+            aboutContainer
+            wow
+            animate__animated animate__fadeIn animate__slower animate__delay-3s
+          "
           id="about"
         >
           <div class="aboutBig">
@@ -96,7 +115,11 @@
           </div>
         </section>
         <section
-          class="sliderContainer wow animate__animated animate__fadeInLeft"
+          class="
+            sliderContainer
+            wow
+            animate__animated animate__slower animate__fadeIn
+          "
           id="slider"
         >
           <div
@@ -303,16 +326,13 @@
           </div>
         </section>
 
-        <section
-          class="about2Container wow animate__animated animate__fadeInRight"
-          id="about2"
-        >
+        <section class="about2Container wow" id="about2">
           <hr />
-          <h2>
+          <h2 class="animate__animated animate__fadeInRight animate__slower">
             <span>Un edificio para mirar la ciudad.</span>
             <span>Una ciudad para mirar el edificio.</span>
           </h2>
-          <p>
+          <p class="animate__animated animate__fadeInLeft animate__slower">
             VENGAS DESDE DONDE VENGAS Y VAYAS HACIA DONDE VAYAS, TENEMOS LA
             MEJOR CONECTIVIDAD.
           </p>
@@ -336,11 +356,15 @@
         </section>
 
         <section
-          class="mapContainer wow animate__animated animate__fadeIn"
+          class="
+            mapContainer
+            wow
+            animate__animated animate__fadeIn animate__slower
+          "
           id="map"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6570.720451669615!2d-58.42601115666249!3d-34.56975068695369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5ee6fc06e3f%3A0xf14765500df899b4!2sParque%20Gigena!5e0!3m2!1ses-419!2sar!4v1630516755751!5m2!1ses-419!2sar"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.3559476393857!2d-58.425429785196556!3d-34.56985896321351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb598ac917061%3A0x7c2976cf5f0ec8c6!2sAv.%20Dorrego%2080%2C%20C1425%20GAZ%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1630586621827!5m2!1ses-419!2sar"
             width="100%"
             height="450"
             style="border: 0"
@@ -350,7 +374,11 @@
         </section>
 
         <section
-          class="formContainer wow animate__animated animate__fadeInRight"
+          class="
+            formContainer
+            wow
+            animate__animated animate__fadeInRight animate__slow
+          "
           id="form"
         >
           <form id="contactContainer" novalidate="novalidate">
@@ -361,6 +389,7 @@
                   name="name"
                   id="name"
                   placeholder="NOMBRE (*)"
+                  required
                 />
               </div>
               <div class="formControl">
@@ -377,6 +406,7 @@
                   name="email"
                   id="email"
                   placeholder="EMAIL (*)"
+                  required
                 />
               </div>
               <div class="formControl">
@@ -385,6 +415,7 @@
                   name="phone"
                   id="phone"
                   placeholder="CELULAR (*)"
+                  required
                 />
               </div>
             </div>
@@ -394,6 +425,7 @@
                   name="message"
                   id="message"
                   placeholder="MENSAJE (*)"
+                  required
                 ></textarea>
               </div>
             </div>
@@ -403,7 +435,11 @@
           </form>
         </section>
         <section
-          class="providerContainer wow animate__animated animate__fadeIn"
+          class="
+            providerContainer
+            wow
+            animate__animated animate__fadeIn animate__slow
+          "
           id="provider"
         >
           <div class="provider provider1">
@@ -416,14 +452,20 @@
           </div>
         </section>
       </main>
-      <footer class="footer wow animate__animated animate__fadeInLeft">
+      <footer
+        class="footer wow animate__animated animate__fadeIn animate__slower"
+      >
         <section class="brandFooter">
-          <img src="./assets/imgs/mobile/logo.svg" alt="Logo" />
+          <a href="#">
+            <img src="./assets/imgs/mobile/logo.svg" alt="Logo" />
+          </a>
         </section>
         <section class="footerDescription">
           <p>
             +54 11 4777 2426 | INFO@PASEOGIGENA.COM.AR |
-            <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/paseogigena/" target="blank">
+              <i class="fab fa-instagram"></i
+            ></a>
           </p>
           <p>
             Copyright © 2001 - 2021 BSD Investments. Todos los derechos
@@ -431,7 +473,9 @@
           </p>
         </section>
         <section class="firmContainer">
-          <img src="./assets/icons/remolino.svg" alt="Firm Agency" />
+          <a href="https://www.remolino.org/">
+            <img src="./assets/icons/remolino.svg" alt="Firm Agency" />
+          </a>
         </section>
       </footer>
     </div>

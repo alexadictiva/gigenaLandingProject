@@ -1,11 +1,14 @@
+/*footer*/
 .footer {
   padding: 60px 20px;
   background-color: $color3;
   text-align: center;
   .brandFooter {
     margin-bottom: 30px;
-    img {
-      width: 25%;
+    a{
+      img {
+        width: 25%;
+      }
     }
   }
   .footerDescription {
