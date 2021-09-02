@@ -5,7 +5,7 @@
   text-align: center;
   .brandFooter {
     margin-bottom: 30px;
-    a{
+    a {
       img {
         width: 25%;
       }
@@ -16,6 +16,11 @@
       color: $color1;
       font: $caption;
       margin-bottom: 20px;
+      a {
+        i {
+          color: $color1;
+        }
+      }
     }
   }
   .firmContainer {

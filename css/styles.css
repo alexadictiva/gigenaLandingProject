@@ -152,6 +152,7 @@ hr {
   margin-top: 30px;
 }
 
+/*footer*/
 .footer {
   padding: 60px 20px;
   background-color: #1f1f1f;
@@ -162,7 +163,7 @@ hr {
   margin-bottom: 30px;
 }
 
-.footer .brandFooter img {
+.footer .brandFooter a img {
   width: 25%;
 }
 
@@ -170,6 +171,10 @@ hr {
   color: #ffffff;
   font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
   margin-bottom: 20px;
+}
+
+.footer .footerDescription p a i {
+  color: #ffffff;
 }
 
 .footer .firmContainer {
