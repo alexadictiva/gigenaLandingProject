@@ -1,15 +1,17 @@
 /*form*/
 .formContainer {
-  padding: 40px 20px;
+  padding: 67.3px 40px 62.8px;
   background-color: $color3;
   form {
     .input {
       .formControl {
         input {
           @include input;
+          outline: none;
           &::placeholder {
+            text-transform: uppercase;
             color: $color1;
-            font: $caption;
+            font: normal 13px/15.6px $fontBase;
           }
         }
       }
@@ -18,10 +20,12 @@
       .formControl {
         textarea {
           @include input;
+          outline: none;
           height: 120px;
           &::placeholder {
+            text-transform: uppercase;
             color: $color1;
-            font: $caption;
+            font: normal 13px/15.6px $fontBase;
           }
         }
       }
@@ -29,6 +33,7 @@
     .formBtn {
       text-align: center;
       button {
+        font: normal 13px/15.6px $fontBase;
         text-transform: uppercase;
         color: $color1;
         border: $color1 1px solid;

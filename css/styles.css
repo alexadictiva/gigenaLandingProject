@@ -191,7 +191,7 @@ hr {
 
 /*form*/
 .formContainer {
-  padding: 40px 20px;
+  padding: 67.3px 40px 62.8px;
   background-color: #1f1f1f;
 }
 
@@ -203,26 +203,31 @@ hr {
   width: 100%;
   margin-bottom: 20px;
   padding-bottom: 5px;
+  outline: none;
 }
 
 .formContainer form .input .formControl input::-webkit-input-placeholder {
+  text-transform: uppercase;
   color: #ffffff;
-  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 13px/15.6px "AkzidenzGroteskBE-Regular", sans-serif;
 }
 
 .formContainer form .input .formControl input:-ms-input-placeholder {
+  text-transform: uppercase;
   color: #ffffff;
-  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 13px/15.6px "AkzidenzGroteskBE-Regular", sans-serif;
 }
 
 .formContainer form .input .formControl input::-ms-input-placeholder {
+  text-transform: uppercase;
   color: #ffffff;
-  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 13px/15.6px "AkzidenzGroteskBE-Regular", sans-serif;
 }
 
 .formContainer form .input .formControl input::placeholder {
+  text-transform: uppercase;
   color: #ffffff;
-  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 13px/15.6px "AkzidenzGroteskBE-Regular", sans-serif;
 }
 
 .formContainer form .textarea .formControl textarea {
@@ -233,27 +238,32 @@ hr {
   width: 100%;
   margin-bottom: 20px;
   padding-bottom: 5px;
+  outline: none;
   height: 120px;
 }
 
 .formContainer form .textarea .formControl textarea::-webkit-input-placeholder {
+  text-transform: uppercase;
   color: #ffffff;
-  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 13px/15.6px "AkzidenzGroteskBE-Regular", sans-serif;
 }
 
 .formContainer form .textarea .formControl textarea:-ms-input-placeholder {
+  text-transform: uppercase;
   color: #ffffff;
-  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 13px/15.6px "AkzidenzGroteskBE-Regular", sans-serif;
 }
 
 .formContainer form .textarea .formControl textarea::-ms-input-placeholder {
+  text-transform: uppercase;
   color: #ffffff;
-  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 13px/15.6px "AkzidenzGroteskBE-Regular", sans-serif;
 }
 
 .formContainer form .textarea .formControl textarea::placeholder {
+  text-transform: uppercase;
   color: #ffffff;
-  font: normal 12px/15px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 13px/15.6px "AkzidenzGroteskBE-Regular", sans-serif;
 }
 
 .formContainer form .formBtn {
@@ -261,6 +271,7 @@ hr {
 }
 
 .formContainer form .formBtn button {
+  font: normal 13px/15.6px "AkzidenzGroteskBE-Regular", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   border: #ffffff 1px solid;
