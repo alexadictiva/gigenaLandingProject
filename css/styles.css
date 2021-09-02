@@ -99,13 +99,17 @@ hr {
   padding: 40px 20px;
 }
 
-.aboutContainer h2 {
+.aboutContainer .aboutBig {
+  margin-bottom: 40px;
+}
+
+.aboutContainer .aboutBig h2 {
   font: bold 30px/38px "AkzidenzGroteskBE-Regular", sans-serif;
   color: #272727;
   margin-bottom: 20px;
 }
 
-.aboutContainer p {
+.aboutContainer .aboutBig p {
   margin-bottom: 20px;
 }
 
@@ -311,6 +315,9 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
+  .aboutContainer .aboutBig p span {
+    display: block;
+  }
   .aboutContainer .aboutFlex {
     display: -webkit-box;
     display: -ms-flexbox;

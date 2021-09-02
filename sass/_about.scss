@@ -1,12 +1,15 @@
 .aboutContainer {
   padding: 40px 20px;
-  h2 {
-    font: $headLine2;
-    color: $color2;
-    margin-bottom: 20px;
-  }
-  p {
-    margin-bottom: 20px;
+  .aboutBig {
+    margin-bottom: 40px;
+    h2 {
+      font: $headLine2;
+      color: $color2;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
   }
   .aboutFlex {
     margin-top: 20px;
