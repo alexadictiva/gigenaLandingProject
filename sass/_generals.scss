@@ -6,7 +6,6 @@
 :root {
   /*font-size: 62.5%;*/
   scroll-behavior: smooth;
- 
 }
 body {
   font: $body1;
@@ -25,7 +24,7 @@ a {
 }
 hr {
   background-color: $color4;
-  width: 90%;
+  width: 100%;
   margin: 30px auto;
   border: 1px solid $color4;
 }

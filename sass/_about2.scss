@@ -1,19 +1,24 @@
 /*about 2*/
 
 .about2Container {
-  padding: 40px 20px;
+  padding: 28px 20px;
   text-align: center;
   h2 {
-    font: $headLine5;
-    margin-bottom: 30px;
+    font: bold 18px/21px $fontBase;
+    margin-bottom: 33.7px;
     color: $color2;
     span {
       display: block;
     }
   }
+  p {
+    font: normal 13px/17px $fontBase;
+    width: 80%;
+    margin: auto;
+  }
   picture {
     img {
-      margin-top: 30px;
+      margin: 35px 0 28px;
     }
   }
 }

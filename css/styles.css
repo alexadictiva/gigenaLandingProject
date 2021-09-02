@@ -29,7 +29,7 @@ a {
 
 hr {
   background-color: #fd5b33;
-  width: 90%;
+  width: 100%;
   margin: 30px auto;
   border: 1px solid #fd5b33;
 }
@@ -135,13 +135,13 @@ hr {
 
 /*about 2*/
 .about2Container {
-  padding: 40px 20px;
+  padding: 28px 20px;
   text-align: center;
 }
 
 .about2Container h2 {
-  font: bold 18px/20px "AkzidenzGroteskBE-Regular", sans-serif;
-  margin-bottom: 30px;
+  font: bold 18px/21px "AkzidenzGroteskBE-Regular", sans-serif;
+  margin-bottom: 33.7px;
   color: #272727;
 }
 
@@ -149,8 +149,14 @@ hr {
   display: block;
 }
 
+.about2Container p {
+  font: normal 13px/17px "AkzidenzGroteskBE-Regular", sans-serif;
+  width: 80%;
+  margin: auto;
+}
+
 .about2Container picture img {
-  margin-top: 30px;
+  margin: 35px 0 28px;
 }
 
 /*footer*/
