@@ -3,23 +3,26 @@
   background-color: $color4;
   .headerContent {
     text-align: center;
-    padding: 100px 20px 0px;
+    padding: 40px 20px;
     width: 95%;
     height: 100%;
     border-top-right-radius: 100px;
     background-color: $color3;
     display: flex;
     flex-direction: column;
-    gap: 50px;
     justify-content: center;
     .brandContent {
-      text-align: center;     
+      text-align: center;
+      margin-bottom: 84.2px;
     }
     .sloganContainer {
       .slogan {
-        font: $headLine1;
+        font: normal 27px/34px $fontBase;
         color: $color1;
-        margin-bottom: 50px;
+        margin-bottom: 48.9px;
+        span {
+          display: block;
+        }
       }
     }
     .btnContainer {
@@ -36,7 +39,7 @@
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         outline: none;
-        padding: 15px 20px;
+        padding: 13px 37px 15px 25px;
       }
     }
   }

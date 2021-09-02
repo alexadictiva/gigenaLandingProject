@@ -48,7 +48,7 @@ hr {
 
 .headerContainer .headerContent {
   text-align: center;
-  padding: 100px 20px 0px;
+  padding: 40px 20px;
   width: 95%;
   height: 100%;
   border-top-right-radius: 100px;
@@ -60,7 +60,6 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -68,12 +67,17 @@ hr {
 
 .headerContainer .headerContent .brandContent {
   text-align: center;
+  margin-bottom: 84.2px;
 }
 
 .headerContainer .headerContent .sloganContainer .slogan {
-  font: normal 30px/38px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 27px/34px "AkzidenzGroteskBE-Regular", sans-serif;
   color: #ffffff;
-  margin-bottom: 50px;
+  margin-bottom: 48.9px;
+}
+
+.headerContainer .headerContent .sloganContainer .slogan span {
+  display: block;
 }
 
 .headerContainer .headerContent .btnContainer {
@@ -92,7 +96,7 @@ hr {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   outline: none;
-  padding: 15px 20px;
+  padding: 13px 37px 15px 25px;
 }
 
 .aboutContainer {
