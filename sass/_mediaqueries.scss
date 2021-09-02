@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) {
+  .aboutContainer {
+    .aboutFlex {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      div {
+        width: 50%;
+      }
+    }
+  }
+
+  .providerContainer {
+    .provider {
+      width: 25%;
+    }
+  }
+  .footer {
+    .firmContainer {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .headerContainer {
+    .headerContent {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .aboutContainer {
+    padding: 40px 100px;
+  }
+  .about2Container {
+    padding: 40px 100px;
+    h2 {
+      span {
+        display: inline;
+      }
+    }
+  }
+  .formContainer {
+    padding: 40px 100px;
+  }
+  .providerContainer {
+    padding: 40px 100px;
+  }
+  .footer {
+    padding: 40px 100px;
+  }
+}

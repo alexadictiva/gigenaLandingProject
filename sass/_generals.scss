@@ -9,6 +9,7 @@
 }
 body {
   font: $body1;
+  color: $fontColor;
   position: relative;
   overflow-x: hidden;
 }
@@ -32,15 +33,4 @@ hr {
   max-width: 1024px;
   margin: auto;
   position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .aboutFlex {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    div {
-      width: 50%;
-    }
-  }
 }

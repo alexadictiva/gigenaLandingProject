@@ -2,9 +2,10 @@
   padding: 40px 20px;
   background-color: $color5;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   .provider {
     text-align: center;
+    width: 50%;
     h3 {
       text-transform: uppercase;
       color: $color3;

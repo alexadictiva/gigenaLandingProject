@@ -12,6 +12,7 @@
 
 body {
   font: normal 14px/20px "AkzidenzGroteskBE-Regular", sans-serif;
+  color: #494948;
   position: relative;
   overflow-x: hidden;
 }
@@ -37,21 +38,6 @@ hr {
   max-width: 1024px;
   margin: auto;
   position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .aboutFlex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 20px;
-  }
-  .aboutFlex div {
-    width: 50%;
-  }
 }
 
 .headerContainer {
@@ -84,7 +70,7 @@ hr {
 }
 
 .headerContainer .headerContent .sloganContainer .slogan {
-  font: normal 25px/30px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 30px/38px "AkzidenzGroteskBE-Regular", sans-serif;
   color: #ffffff;
   margin-bottom: 50px;
 }
@@ -93,7 +79,7 @@ hr {
   text-align: end;
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 13px;
   z-index: 10;
 }
 
@@ -113,7 +99,8 @@ hr {
 }
 
 .aboutContainer h2 {
-  font: normal 25px/30px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 30px/38px "AkzidenzGroteskBE-Regular", sans-serif;
+  color: #272727;
   margin-bottom: 20px;
 }
 
@@ -130,7 +117,7 @@ hr {
 }
 
 .aboutContainer .aboutFlex .aboutFlexDescription h3 {
-  font: bold 18px/21px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 22px/32px "AkzidenzGroteskBE-Regular", sans-serif;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -147,8 +134,9 @@ hr {
 }
 
 .about2Container h2 {
-  font: bold 18px/21px "AkzidenzGroteskBE-Regular", sans-serif;
+  font: normal 18px/21px "AkzidenzGroteskBE-Regular", sans-serif;
   margin-bottom: 30px;
+  color: #272727;
 }
 
 .about2Container h2 span {
@@ -160,7 +148,7 @@ hr {
 }
 
 .footer {
-  padding: 40px 20px;
+  padding: 60px 20px;
   background-color: #1f1f1f;
   text-align: center;
 }
@@ -270,13 +258,14 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .providerContainer .provider {
   text-align: center;
+  width: 50%;
 }
 
 .providerContainer .provider h3 {
@@ -313,5 +302,51 @@ hr {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutContainer .aboutFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .aboutContainer .aboutFlex div {
+    width: 50%;
+  }
+  .providerContainer .provider {
+    width: 25%;
+  }
+  .footer .firmContainer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .headerContainer .headerContent {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .aboutContainer {
+    padding: 40px 100px;
+  }
+  .about2Container {
+    padding: 40px 100px;
+  }
+  .about2Container h2 span {
+    display: inline;
+  }
+  .formContainer {
+    padding: 40px 100px;
+  }
+  .providerContainer {
+    padding: 40px 100px;
+  }
+  .footer {
+    padding: 40px 100px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

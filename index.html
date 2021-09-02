@@ -8,28 +8,38 @@
       name="description"
       content="Paseo Gigena: Un legado arquitectónico para la Ciudad de Buenos Aires."
     />
+    <script
+      src="https://kit.fontawesome.com/83ef059c2f.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Paseo Gigena</title>
   </head>
   <body>
     <div class="wrapper">
-      <header class="headerContainer">
+      <header class="headerContainer wow">
         <section class="headerContent">
-          <div class="brandContent">
+          <div class="brandContent animate__animated animate__fadeDown">
             <img src="./assets/imgs/mobile/logo.svg" alt="Logo" />
           </div>
           <div class="sloganContainer">
             <p class="slogan">
               Un legado arquitectónico para la Cuidad de Buenos Aires
             </p>
-            <img src="./assets/icons/arrowDown.svg" alt="Arrow Down" />
+            <a href="#about">
+              <img src="./assets/icons/arrowDown.svg" alt="Arrow Down" />
+            </a>
           </div>
           <div class="btnContainer">
-            <button class="btnContact">Contacto</button>
+            <a class="btnContact" href="#">Contacto</a>
           </div>
         </section>
       </header>
@@ -388,7 +398,10 @@
           <img src="./assets/imgs/mobile/logo.svg" alt="Logo" />
         </section>
         <section class="footerDescription">
-          <p>+54 11 4777 2426 | INFO@PASEOGIGENA.COM.AR |</p>
+          <p>
+            +54 11 4777 2426 | INFO@PASEOGIGENA.COM.AR |
+            <i class="fab fa-instagram"></i>
+          </p>
           <p>
             Copyright © 2001 - 2021 BSD Investments. Todos los derechos
             reservados.
@@ -399,7 +412,13 @@
         </section>
       </footer>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/wow/wow.min.js"></script>
+
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

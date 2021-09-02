@@ -1,4 +1,6 @@
 @import "./../Fonts/AkzidGroBELig";
+@import "./../Fonts/AkzidGroBEMd";
+@import "./../Fonts/AkzidGroBEReg";
 @import "_variables";
 @import "_generals";
 @import "_header";
@@ -9,3 +11,4 @@
 @import "_map";
 @import "_provider";
 @import "_slider";
+@import "_mediaqueries.scss";
