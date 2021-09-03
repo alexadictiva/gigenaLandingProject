@@ -3,9 +3,10 @@
   background-color: $color5;
   display: flex;
   justify-content: center;
+  gap: 86px;
   .provider {
     text-align: center;
-    width: 50%;
+
     h3 {
       text-transform: uppercase;
       color: $color3;

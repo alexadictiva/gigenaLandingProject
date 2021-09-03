@@ -167,11 +167,11 @@ hr {
 }
 
 .footer .brandFooter {
-  margin-bottom: 30px;
+  margin-bottom: 30.2px;
 }
 
 .footer .brandFooter a img {
-  width: 25%;
+  width: 20%;
 }
 
 .footer .footerDescription p {
@@ -185,7 +185,7 @@ hr {
 }
 
 .footer .firmContainer {
-  margin-top: 20px;
+  margin-top: 46.4px;
   text-align: end;
 }
 
@@ -275,7 +275,7 @@ hr {
   text-transform: uppercase;
   color: #ffffff;
   border: #ffffff 1px solid;
-  padding: 10px;
+  padding: 15px 20px;
   background-color: #1f1f1f;
   outline: none;
 }
@@ -289,11 +289,11 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 86px;
 }
 
 .providerContainer .provider {
   text-align: center;
-  width: 50%;
 }
 
 .providerContainer .provider h3 {
@@ -338,25 +338,100 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
+  .headerContainer .headerContent .sloganContainer .slogan {
+    font: normal 33.15px/45.08px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .aboutContainer {
+    padding: 79.5px 162.9px 92.7px 94.1px;
+  }
+  .aboutContainer .aboutBig h2 {
+    font: bold 41.81px/50.17px "AkzidenzGroteskBE-Regular", sans-serif;
+    margin-bottom: 43.9px;
+  }
+  .aboutContainer .aboutBig h2 span {
+    display: block;
+  }
+  .aboutContainer .aboutBig p {
+    font: normal 21px/26px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
   .aboutContainer .aboutBig p span {
     display: block;
   }
   .aboutContainer .aboutFlex {
+    margin-top: 49.2px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 20px;
+    gap: 43.3px;
   }
   .aboutContainer .aboutFlex div {
     width: 50%;
   }
-  .providerContainer .provider {
-    width: 25%;
+  .aboutContainer .aboutFlex .aboutFlexDescription h3 {
+    font: bold 29.42px/37.59px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .aboutContainer .aboutFlex .aboutFlexDescription ul {
+    font: normal 21px/28px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .swiper {
+    height: 80vh;
+  }
+  .about2Container {
+    padding: 38.3px 162.9px 43.1px 94.1px;
+  }
+  .about2Container h2 {
+    font: bold 24.66px/28.77px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .about2Container h2 span {
+    display: inline;
+  }
+  .about2Container p {
+    font: normal 17.81px/23.29px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .formContainer {
+    padding: 64.2px 105px 66.1px 102px;
+  }
+  .formContainer form .input .formControl input::-webkit-input-placeholder {
+    font: normal 17px/20.4px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .formContainer form .input .formControl input:-ms-input-placeholder {
+    font: normal 17px/20.4px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .formContainer form .input .formControl input::-ms-input-placeholder {
+    font: normal 17px/20.4px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .formContainer form .input .formControl input::placeholder {
+    font: normal 17px/20.4px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .formContainer form .textarea .formControl textarea::-webkit-input-placeholder {
+    font: normal 17px/20.4px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .formContainer form .textarea .formControl textarea:-ms-input-placeholder {
+    font: normal 17px/20.4px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .formContainer form .textarea .formControl textarea::-ms-input-placeholder {
+    font: normal 17px/20.4px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .formContainer form .textarea .formControl textarea::placeholder {
+    font: normal 17px/20.4px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .formContainer form .formBtn button {
+    font: normal 15.89px/19.07px "AkzidenzGroteskBE-Regular", sans-serif;
+  }
+  .providerContainer {
+    gap: 164px;
+  }
+  .footer {
+    padding-bottom: 47.8px;
+  }
+  .footer .brandFooter a img {
+    width: 10%;
   }
   .footer .firmContainer {
+    margin-top: 43.3px;
     text-align: center;
   }
 }
@@ -367,15 +442,6 @@ hr {
     padding-right: 40px;
   }
   .aboutContainer {
-    padding: 40px 100px;
-  }
-  .about2Container {
-    padding: 40px 100px;
-  }
-  .about2Container h2 span {
-    display: inline;
-  }
-  .formContainer {
     padding: 40px 100px;
   }
   .providerContainer {

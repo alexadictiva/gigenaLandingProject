@@ -4,17 +4,17 @@
   background-color: $color3;
   text-align: center;
   .brandFooter {
-    margin-bottom: 30px;
+    margin-bottom: 30.2px;
     a {
       img {
-        width: 25%;
+        width: 20%;
       }
     }
   }
   .footerDescription {
     p {
       color: $color1;
-      font: $caption;
+      font: normal 12px/15px $fontBase;
       margin-bottom: 20px;
       a {
         i {
@@ -24,7 +24,7 @@
     }
   }
   .firmContainer {
-    margin-top: 20px;
+    margin-top: 46.4px;
     text-align: end;
   }
 }
