@@ -3,28 +3,67 @@
   padding: 60px 20px;
   background-color: $color3;
   text-align: center;
+
   .brandFooter {
     margin-bottom: 30.2px;
+
     a {
       img {
         width: 20%;
       }
     }
   }
+
   .footerDescription {
     p {
       color: $color1;
-      font: normal 12px/15px $fontBase;
+
+      font-size: 12px;
+      line-height: 15px;
+      font-family: $fontBase;
       margin-bottom: 20px;
+
       a {
         i {
           color: $color1;
         }
       }
     }
+
+    span {
+      padding: 0 5px;
+    }
   }
   .firmContainer {
     margin-top: 46.4px;
     text-align: end;
+  }
+  @include tablet {
+    .firmContainer {
+      text-align: center;
+    }
+  }
+  @include desktop {
+    .formContainer {
+      .footer {
+        padding-bottom: 47.8px;
+        .brandFooter {
+          a {
+            img {
+              width: 10%;
+            }
+          }
+        }
+        .footerDescription {
+          p {
+            font-size: 19.35px;
+            line-height: 18.4px;
+          }
+        }
+        .firmContainer {
+          margin-top: 43.3px;
+        }
+      }
+    }
   }
 }

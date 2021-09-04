@@ -1,7 +1,8 @@
-@import "./../fonts/AkzidGroBELig";
-@import "./../fonts/AkzidGroBEMd";
-@import "./../fonts/AkzidGroBEReg";
+@import "_fonts";
 @import "_variables";
+@import "_reset";
+@import "mixins";
+@import "_fonts";
 @import "_generals";
 @import "_header";
 @import "_about";
@@ -11,4 +12,4 @@
 @import "_map";
 @import "_provider";
 @import "_slider";
-@import "_mediaqueries.scss";
+

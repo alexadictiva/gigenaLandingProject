@@ -1,0 +1,25 @@
+@mixin input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px $color4;
+  display: block;
+  font-family: "AkzidenzGroteskBE-Regular";
+  font-size: $formFontSize;
+  margin-bottom: $generalPadding / 4;
+  outline: none;
+  padding-bottom: 5px;
+  width: 100%;
+  color: $color1;
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}

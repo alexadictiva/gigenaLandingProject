@@ -1,17 +1,27 @@
 .providerContainer {
-  padding: 60px 20px;
   background-color: $color5;
   display: flex;
+  gap: $generalPadding * 1.5;
   justify-content: center;
-  gap: 86px;
+  padding: 60px 20px;
+
   .provider {
     text-align: center;
 
-    h3 {
-      text-transform: uppercase;
+    h4 {
       color: $color3;
-      font: $caption;
+      font-family: $fontBase;
       margin-bottom: 20px;
+      text-transform: uppercase;
     }
+
+    img {
+      width: calc(100% - 10px);
+    }
+  }
+
+  @include tablet {
+    gap: $generalPadding * 4;
+    padding: $generalPadding * 1.5;
   }
 }

@@ -8,94 +8,36 @@
 // 800 Black, Extra Bold or Heavy
 // 900 Extra Black, Fat, Poster or Ultra Black
 // FONTS PATH
-// $fonts-url: '../fonts'
-$fonts-url: 'fonts';
+$fonts-url: '../fonts';
 
-/* IS MULTIFONT */
-$multi: true;
+$f-light: 200;
+$f-book: 300;
+$f-normal: 400;
+$f-regular: 400;
+$f-medium: 500;
+$f-semibold: 600;
+$f-bold: 700;
+$f-black: 800;
+$f-heavy: 900;
 
 // FONTS
-$font-01: 'AkzidenzGroteskBE-Regular';
-$font-01-file: 'Uni-Sans-Book';
-$font-01-style: 'normal';
-$font-01-weight: '300';
+$fonts: // font-name, font-filename, font-style, font-weight
+        (AkzidenzGroteskBE-Light, AkzidenzGroteskBE-Light, normal, $f-regular),
+        (AkzidenzGroteskBE-Md, AkzidenzGroteskBE-Md, normal, $f-regular),
+        (AkzidenzGroteskBE-Regular, AkzidenzGroteskBE-Regular, normal, $f-regular);
 
-$font-02: 'Uni-Sans';
-$font-02-file: 'Uni-Sans-SemiBold';
-$font-02-style: 'normal';
-$font-02-weight: '600';
-
-// $font-03: ''
-// $font-03-file: ''
-// $font-03-style: ''
-// $font-03-weight: ''
-// $font-04: ''
-// $font-04-file: ''
-// $font-04-style: ''
-// $font-04-weight: ''
-.font-01
-    font-family: $font-01;
-// .font-02
-//     font-family: $font-02
-// .font-03
-//     font-family: $font-03
-// .font-04
-//     font-family: $font-04
-@if $multi
-    $fonts: ($font-01, $font-01-file, $font-01-style, $font-01-weight), ($font-02, $font-02-file, $font-02-style, $font-02-weight)//, ($font-03, $font-03-file, $font-03-style, $font-03-weight),  ($font-04, $font-04-file, $font-04-style, $font-04-weight)
-
-    @each $fontName, $fontFileName, $fontStyle, $fontWeight in $fonts
-        @font-face
-            font-family: '#{$fontName}'
-            src: url('#{$fonts-url}/#{$fontFileName}.eot')
-            /* IE9 Compat Modes */
-            src: url('#{$fonts-url}/#{$fontFileName}.eot?#iefix') format('embedded-opentype'),
-            /* IE6-IE8 */
-            url('#{$fonts-url}/#{$fontFileName}.woff') format('woff'),
-            /* Modern Browsers */
-            url('#{$fonts-url}/#{$fontFileName}.woff2') format('woff2'),
-            /* Svg */
-            // url('#{$fonts-url}/#{$fontFileName}.svg') format('svg'),
-            /* Modern Browsers */
-            url('#{$fonts-url}/#{$fontFileName}.ttf') format('truetype')
-            /* Safari, Android, iOS */
-            font-style: #{$fontStyle}
-            font-weight: #{$fontWeight}
-            text-rendering: optimizeLegibility
-            font-display: swap
-
-@else 
-    $fontName: $font-01
-    $fontFileName: $font-01-file
-    $fontStyle: $font-01-style
-    $fontWeight: $font-01-weight
-
-    @font-face
-        font-family: '#{$fontName}'
-        src: url('#{$fonts-url}/#{$fontFileName}.eot')
-        /* IE9 Compat Modes */
-        src: url('#{$fonts-url}/#{$fontFileName}.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('#{$fonts-url}/#{$fontFileName}.woff') format('woff'),
-        /* Modern Browsers */
-        url('#{$fonts-url}/#{$fontFileName}.woff2') format('woff2'),
-        /* Svg */
-        // url('#{$fonts-url}/#{$fontFileName}.svg') format('svg'),
-        /* Modern Browsers */
-        url('#{$fonts-url}/#{$fontFileName}.ttf') format('truetype')
-        /* Safari, Android, iOS */
-        font-style: #{$fontStyle}
-        font-weight: #{$fontWeight}
-        text-rendering: optimizeLegibility
-        font-display: swap
-
-
-$f-light: 200
-$f-book: 300
-$f-normal: 400
-$f-regular: 400
-$f-medium: 500
-$f-semibold: 600
-$f-bold: 700
-$f-black: 800
-$f-heavy: 800
+@each $font-name, $font-filename, $font-style, $font-weight in $fonts {
+  @font-face {
+    font-family: "#{$font-name}";
+    src: url("#{$fonts-url}/#{$font-filename}.eot"); /* IE9 Compat Modes */
+    src: url("#{$fonts-url}/#{$font-filename}.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */ url("#{$fonts-url}/#{$font-filename}.woff") format("woff"),
+      /* Modern Browsers */ url("#{$fonts-url}/#{$font-filename}.ttf") format("truetype"),
+      /* Safari, Android, iOS */ url("#{$fonts-url}/#{$font-filename}.svg##{$font-name}") format("svg"); /* Legacy iOS */
+    font-style: #{$font-style};
+    font-weight: #{$font-weight};
+    text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    font-display: swap
+  }
+}

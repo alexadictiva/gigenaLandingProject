@@ -1,45 +1,86 @@
 /*form*/
+
 .formContainer {
-  padding: 67.3px 40px 62.8px;
+  padding: $generalPadding;
   background-color: $color3;
+
   form {
-    .input {
-      .formControl {
-        input {
-          @include input;
-          outline: none;
-          &::placeholder {
-            text-transform: uppercase;
-            color: $color1;
-            font: normal 13px/15.6px $fontBase;
-          }
-        }
-      }
-    }
-    .textarea {
-      .formControl {
-        textarea {
-          @include input;
-          outline: none;
-          height: 120px;
-          &::placeholder {
-            text-transform: uppercase;
-            color: $color1;
-            font: normal 13px/15.6px $fontBase;
-          }
-        }
-      }
-    }
-    .formBtn {
-      text-align: center;
-      button {
-        font: normal 13px/15.6px $fontBase;
-        text-transform: uppercase;
+    input {
+      @include input;
+
+      &::placeholder {
         color: $color1;
-        border: $color1 1px solid;
-        padding: 15px 20px;
-        background-color: $color3;
-        outline: none;
+        text-transform: uppercase;
+        font-family: "AkzidenzGroteskBE-Regular";
+      }
+    }
+
+    textarea {
+      @include input;
+      background-attachment: local;
+      background-image: linear-gradient(
+        top,
+        transparent,
+        transparent $formFontSize * 2 - 1,
+        $color4 0
+      );
+      background-image: -webkit-linear-gradient(
+        top,
+        transparent,
+        transparent $formFontSize * 2 - 1,
+        $color4 0
+      );
+      background-size: 100% $formFontSize * 2 - 0.5;
+      border-bottom: 0;
+      color: $color1;
+      height: 70px;
+      line-height: $formFontSize * 2;
+      resize: none;
+
+      &::placeholder {
+        color: $color1;
+      }
+    }
+
+    button {
+      background-color: $color3;
+      border: $color1 1px solid;
+      color: $color1;
+      display: block;
+      margin: $generalPadding / 4 * 3 auto 0;
+      outline: none;
+      padding: 6px 20px 3px;
+      text-transform: uppercase;
+    }
+  }
+  @include tablet {
+    padding: 64.2px 105px 66.1px 102px;
+    form {
+      .input {
+        .formControl {
+          input {
+            &::placeholder {
+              font-size: 17px;
+              line-height: 20.4px;
+            }
+          }
+        }
+      }
+      .textarea {
+        .formControl {
+          textarea {
+            &::placeholder {
+              font-size: 17px;
+              line-height: 20.4px;
+            }
+          }
+        }
+      }
+      .formBtn {
+        button {
+          font-size: 15.89px;
+          line-height: 19.07px;
+        }
       }
     }
   }

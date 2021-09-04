@@ -1,30 +1,87 @@
-.aboutContainer {
-  padding: 57.5px 20px 42.8px;
-  .aboutBig {
-    margin-bottom: 18.3px;
-    h2 {
-      font: bold 25px/38px $fontBase;
-      color: $color2;
-      margin-bottom: 20px;
-    }
-    p {
-      margin-bottom: 20px;
-      font: normal 14px/15.42px $fontBase;
-    }
+#about {
+  padding: 57.5px $generalPadding 42.8px;
+
+  h2 {
+    color: $color2;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: $fontBase;
+    line-height: 15.42px;
+  }
+
   .aboutFlex {
-    div {
-      margin-bottom: 31.8px;
-    }
     .aboutFlexDescription {
+      font-size: 16px;
+      margin-top: 31.8px;
+
       h3 {
-        font: bold 18px/23px $fontBase;
+        font-family: "AkzidenzGroteskBE-Md";
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: bold;
+
         margin-bottom: 15.3px;
         text-transform: uppercase;
       }
+
       ul {
-        font: normal 12px/16px $fontBase;
-        padding-left: 20px;
+        list-style: disc;
+        font-family: $fontBase;
+        padding-left: $generalPadding/2;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  @include tablet {
+    .aboutIntro {
+      max-width: 80%;
+    }
+
+    .aboutFlex {
+      margin-top: 49.2px;
+      display: flex;
+      align-items: center;
+      gap: 43.3px;
+
+      div {
+        width: 50%;
+      }
+      .aboutFlexDescription {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include desktop {
+    padding: ($generalPadding * 2);
+    h2 {
+      font-size: 41.8px;
+      line-height: 50.17px;
+    }
+
+    p {
+      font-size: 21px;
+      line-height: 26px;
+    }
+    .aboutFlex {
+      .aboutFlexDescription {
+        h3 {
+          font-size: 29.42px;
+          line-height: 37.59px;
+        }
+        ul {
+          font-size: 21px;
+          line-height: 28px;
+        }
       }
     }
   }

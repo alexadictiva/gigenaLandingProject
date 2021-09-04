@@ -1,36 +1,33 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 :root {
-  /*font-size: 62.5%;*/
   scroll-behavior: smooth;
 }
+
 body {
-  font: $body1;
   color: $fontColor;
-  position: relative;
+  font: $fontBase;
   overflow-x: hidden;
+  position: relative;
 }
 
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 a {
   text-decoration: none;
 }
-hr {
-  background-color: $color4;
-  width: 100%;
-  margin: 30px auto;
-  border: 1px solid $color4;
-}
+
 .wrapper {
-  min-width: 320px;
-  /*max-width: 1024px;*/
   margin: auto;
-  position: relative;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "AkzidenzGroteskBE-Md";
 }
