@@ -283,7 +283,7 @@ h6 {
 
 .headerContainer .headerContent .btnArrowDownn {
   bottom: 25px;
-  left: calc(50% - 50px);
+  left: calc(50% - 25px);
   position: absolute;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
