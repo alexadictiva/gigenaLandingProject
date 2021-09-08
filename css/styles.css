@@ -541,12 +541,12 @@ h6 {
 }
 
 .footer .brandFooter a img {
-  width: 10%;
+  width: 15%;
 }
 
 @media (min-width: 1024px) {
   .footer .brandFooter a img {
-    width: 5%;
+    width: 6.5%;
   }
 }
 
