@@ -3,21 +3,35 @@
 .about2Container {
   padding: 0 20px;
   text-align: center;
+  @include tablet {
+    padding-left: 94.9px;
+    padding-right: 94.1px;
+  }
   .hrTop {
     background-color: $color4;
     border: 1px solid $color4;
     margin: 23.1px auto 28.1px;
     width: 100%;
+    @include tablet {
+      margin: 38.3px 0 54.3px;
+    }
   }
   h2 {
     font-size: 18px;
     line-height: 21px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-family: "AkzidenzGroteskBE-Md";
     margin-bottom: 33.7px;
     color: $color2;
+    @include tablet {
+      font-size: 24.66px;
+      line-height: 28.77px;
+    }
     span {
       display: block;
+      @include tablet {
+        display: inline-block;
+      }
     }
   }
   p {
@@ -26,6 +40,10 @@
     font-family: $fontBase;
     width: 80%;
     margin: auto;
+    @include tablet {
+      font-size: 17.8px;
+      line-height: 23.9px;
+    }
   }
   picture {
     img {
@@ -37,30 +55,5 @@
     border: 1px solid $color4;
     margin: 28.3px auto 28px;
     width: 100%;
-  }
-  @include tablet {
-    padding-left: 94.9px;
-    padding-right: 94.1px;
-    .hrTop {
-      margin: 38.3px 0 54.3px;
-    }
-    .about2Container {
-      h2 {
-        font-size: 24.66px;
-        line-height: 28.77px;
-        span {
-          display: inline;
-        }
-      }
-      p {
-        font-size: 17.8px;
-        line-height: 23.9px;
-      }
-    }
-    .hrTop {
-      margin: 60.5px 0 38.3px;
-    }
-  }
-  @include desktop {
   }
 }

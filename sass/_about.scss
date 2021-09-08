@@ -1,12 +1,19 @@
 #about {
   padding: 57.5px $generalPadding 42.8px;
+  @include desktop {
+    padding: ($generalPadding * 2);
+  }
 
   h2 {
     color: $color2;
     font-size: 25px;
     line-height: 30px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin-bottom: 20px;
+    @include desktop {
+      font-size: 41.8px;
+      line-height: 50.17px;
+    }
   }
 
   p {
@@ -14,18 +21,44 @@
     font-size: 14px;
     font-family: $fontBase;
     line-height: 15.42px;
+    @include desktop {
+      font-size: 21px;
+      line-height: 26px;
+    }
   }
-
+  .aboutIntro {
+    @include tablet {
+      max-width: 80%;
+    }
+  }
   .aboutFlex {
+    @include tablet {
+      margin-top: 49.2px;
+      display: flex;
+      align-items: center;
+      gap: 43.3px;
+    }
+    @include tablet {
+      div {
+        width: 50%;
+      }
+    }
     .aboutFlexDescription {
       font-size: 16px;
       margin-top: 31.8px;
+      @include tablet {
+        margin-top: 0;
+      }
 
       h3 {
         font-family: "AkzidenzGroteskBE-Md";
         font-size: 18px;
         line-height: 23px;
-        font-weight: bold;
+        /*font-weight: bold;*/
+        @include desktop {
+          font-size: 29.42px;
+          line-height: 37.59px;
+        }
 
         margin-bottom: 15.3px;
         text-transform: uppercase;
@@ -37,48 +70,7 @@
         padding-left: $generalPadding/2;
         font-size: 12px;
         line-height: 16px;
-      }
-    }
-  }
-
-  @include tablet {
-    .aboutIntro {
-      max-width: 80%;
-    }
-
-    .aboutFlex {
-      margin-top: 49.2px;
-      display: flex;
-      align-items: center;
-      gap: 43.3px;
-
-      div {
-        width: 50%;
-      }
-      .aboutFlexDescription {
-        margin-top: 0;
-      }
-    }
-  }
-
-  @include desktop {
-    padding: ($generalPadding * 2);
-    h2 {
-      font-size: 41.8px;
-      line-height: 50.17px;
-    }
-
-    p {
-      font-size: 21px;
-      line-height: 26px;
-    }
-    .aboutFlex {
-      .aboutFlexDescription {
-        h3 {
-          font-size: 29.42px;
-          line-height: 37.59px;
-        }
-        ul {
+        @include desktop {
           font-size: 21px;
           line-height: 28px;
         }

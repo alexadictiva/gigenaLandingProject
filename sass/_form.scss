@@ -3,42 +3,49 @@
 .formContainer {
   padding: $generalPadding;
   background-color: $color3;
+  @include tablet {
+    padding: 64.2px 105px 66.1px 102px;
+  }
 
   form {
     input {
       @include input;
-
+      @include tablet {
+        font-size: 15px;
+      }
       &::placeholder {
         color: $color1;
         text-transform: uppercase;
         font-family: "AkzidenzGroteskBE-Regular";
+        @include tablet {
+          font-size: 17px;
+          line-height: 20.4px;
+        }
       }
     }
 
     textarea {
       @include input;
       background-attachment: local;
-      background-image: linear-gradient(
-        top,
-        transparent,
-        transparent $formFontSize * 2 - 1,
-        $color4 0
-      );
       background-image: -webkit-linear-gradient(
         top,
         transparent,
-        transparent $formFontSize * 2 - 1,
+        transparent 42px,
         $color4 0
       );
-      background-size: 100% $formFontSize * 2 - 0.5;
+      background-size: 100% 43px;
       border-bottom: 0;
       color: $color1;
-      height: 70px;
-      line-height: $formFontSize * 2;
+      height: 122px;
+      line-height: 45px;
       resize: none;
 
       &::placeholder {
         color: $color1;
+        @include tablet {
+          font-size: 17px;
+          line-height: 20.4px;
+        }
       }
     }
 
@@ -51,36 +58,9 @@
       outline: none;
       padding: 6px 20px 3px;
       text-transform: uppercase;
-    }
-  }
-  @include tablet {
-    padding: 64.2px 105px 66.1px 102px;
-    form {
-      .input {
-        .formControl {
-          input {
-            &::placeholder {
-              font-size: 17px;
-              line-height: 20.4px;
-            }
-          }
-        }
-      }
-      .textarea {
-        .formControl {
-          textarea {
-            &::placeholder {
-              font-size: 17px;
-              line-height: 20.4px;
-            }
-          }
-        }
-      }
-      .formBtn {
-        button {
-          font-size: 15.89px;
-          line-height: 19.07px;
-        }
+      @include tablet {
+        font-size: 15.89px;
+        line-height: 19.07px;
       }
     }
   }

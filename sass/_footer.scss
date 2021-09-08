@@ -3,13 +3,18 @@
   padding: 60px 20px;
   background-color: $color3;
   text-align: center;
-
+  @include desktop {
+    padding-bottom: 47.8px;
+  }
   .brandFooter {
     margin-bottom: 30.2px;
 
     a {
       img {
-        width: 20%;
+        width: 10%;
+        @include desktop {
+          width: 5%;
+        }
       }
     }
   }
@@ -17,11 +22,14 @@
   .footerDescription {
     p {
       color: $color1;
-
       font-size: 12px;
       line-height: 15px;
       font-family: $fontBase;
       margin-bottom: 20px;
+      @include desktop {
+        font-size: 19.35px;
+        line-height: 18.4px;
+      }
 
       a {
         i {
@@ -37,33 +45,11 @@
   .firmContainer {
     margin-top: 46.4px;
     text-align: end;
-  }
-  @include tablet {
-    .firmContainer {
+    @include tablet {
       text-align: center;
     }
-  }
-  @include desktop {
-    .formContainer {
-      .footer {
-        padding-bottom: 47.8px;
-        .brandFooter {
-          a {
-            img {
-              width: 10%;
-            }
-          }
-        }
-        .footerDescription {
-          p {
-            font-size: 19.35px;
-            line-height: 18.4px;
-          }
-        }
-        .firmContainer {
-          margin-top: 43.3px;
-        }
-      }
+    @include desktop {
+      margin-top: 43.3px;
     }
   }
 }
