@@ -19,7 +19,27 @@
   }
 }
 
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "";
+  @include tablet {
+    content: "next";
+    color: $color1;
+  }
+}
+
 .swiper-button-prev:after,
-.swiper-button-next:after {
-  color: $color4;
+.swiper-rtl .swiper-button-next:after {
+  content: "";
+  @include tablet {
+    content: "prev";
+    color: $color1;
+  }
+}
+
+.swiper-button-next img,
+.swiper-button-prev img {
+  @include tablet {
+    display: none;
+  }
 }

@@ -273,7 +273,7 @@ h6 {
   padding: 40px 20px;
   position: relative;
   text-align: center;
-  width: calc(100% - 50px);
+  width: calc(100% - 30px);
 }
 
 @media (min-width: 768px) {
@@ -328,14 +328,14 @@ h6 {
   border: 0;
   color: #ffffff;
   font-family: "AkzidenzGroteskBE-Regular";
-  font-size: 20px;
+  font-size: 16px;
   outline: none;
-  padding: 25px 70px 25px 30px;
+  padding: 25px 50px 25px 30px;
 }
 
 @media (min-width: 768px) {
   .headerContainer .headerContent .btnContainer .btnContact {
-    padding: 30px 125px 30px 30px;
+    padding: 25px 125px 25px 25px;
   }
 }
 
@@ -541,7 +541,7 @@ h6 {
 }
 
 .footer .brandFooter a img {
-  width: 15%;
+  width: 20%;
 }
 
 @media (min-width: 1024px) {
@@ -560,7 +560,7 @@ h6 {
 
 @media (min-width: 1024px) {
   .footer .footerDescription p {
-    font-size: 19.35px;
+    font-size: 16px;
     line-height: 18.4px;
   }
 }
@@ -575,7 +575,7 @@ h6 {
 
 .footer .firmContainer {
   margin-top: 46.4px;
-  text-align: end;
+  text-align: start;
 }
 
 @media (min-width: 768px) {
@@ -808,8 +808,36 @@ h6 {
      object-fit: cover;
 }
 
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "";
+}
+
+@media (min-width: 768px) {
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after {
+    content: "next";
+    color: #ffffff;
+  }
+}
+
 .swiper-button-prev:after,
-.swiper-button-next:after {
-  color: #fd5b33;
+.swiper-rtl .swiper-button-next:after {
+  content: "";
+}
+
+@media (min-width: 768px) {
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after {
+    content: "prev";
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-button-next img,
+  .swiper-button-prev img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
