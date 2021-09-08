@@ -22,19 +22,12 @@
       text-align: center;
     }
 
-    .btnArrowDownn {
-      bottom: 75px;
-      left: calc(50% - 25px);
-      position: absolute;
-      transform: translateX(50%);
-    }
-
     .sloganContainer {
       .slogan {
         color: $color1;
         font-size: 22px;
         font-family: "AkzidenzGroteskBE-Regular";
-        margin-bottom: 45px;
+        margin-bottom: 35px; /*45*/
         @include tablet {
           font-size: 33.15px;
           line-height: 45.08px;
@@ -45,6 +38,12 @@
       }
     }
 
+    .btnArrowDownn {
+      bottom: 75px;
+      left: calc(50% - 25px);
+      position: absolute;
+      transform: translateX(50%);
+    }
     .btnContainer {
       bottom: 13px;
       position: fixed;

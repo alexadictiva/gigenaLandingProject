@@ -287,19 +287,12 @@ h6 {
   text-align: center;
 }
 
-.headerContainer .headerContent .btnArrowDownn {
-  bottom: 75px;
-  left: calc(50% - 25px);
-  position: absolute;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-}
-
 .headerContainer .headerContent .sloganContainer .slogan {
   color: #ffffff;
   font-size: 22px;
   font-family: "AkzidenzGroteskBE-Regular";
-  margin-bottom: 45px;
+  margin-bottom: 35px;
+  /*45*/
 }
 
 @media (min-width: 768px) {
@@ -311,6 +304,14 @@ h6 {
 
 .headerContainer .headerContent .sloganContainer .slogan span {
   display: block;
+}
+
+.headerContainer .headerContent .btnArrowDownn {
+  bottom: 75px;
+  left: calc(50% - 25px);
+  position: absolute;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .headerContainer .headerContent .btnContainer {
@@ -563,6 +564,10 @@ h6 {
     font-size: 16px;
     line-height: 18.4px;
   }
+}
+
+.footer .footerDescription p a {
+  color: #ffffff;
 }
 
 .footer .footerDescription p a i {
