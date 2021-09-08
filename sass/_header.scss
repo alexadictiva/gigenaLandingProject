@@ -12,7 +12,7 @@
     padding: 40px 20px;
     position: relative;
     text-align: center;
-    width: calc(100% - 30px);
+    width: calc(100% - 27px);
     @include tablet {
       width: calc(100% - 100px);
     }
@@ -23,7 +23,7 @@
     }
 
     .btnArrowDownn {
-      bottom: 25px;
+      bottom: 50px;
       left: calc(50% - 25px);
       position: absolute;
       transform: translateX(50%);
@@ -32,7 +32,7 @@
     .sloganContainer {
       .slogan {
         color: $color1;
-        font-size: 25px;
+        font-size: 22px;
         font-family: "AkzidenzGroteskBE-Regular";
         margin-bottom: 48.9px;
         @include tablet {
@@ -63,7 +63,7 @@
         outline: none;
         padding: 25px 50px 25px 30px;
         @include tablet {
-          padding: 25px 125px 25px 25px;
+          padding: 25px 118px 25px 25px;
         }
       }
     }
